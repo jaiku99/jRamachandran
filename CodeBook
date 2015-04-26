@@ -1,11 +1,16 @@
 Code Book.
 
-Activity Mean   
-Fie  ActMean.txt
+Describes the output of the  run_analysis.R  script.
 
-Has 86  Observations of  6 Activities
-Each row represents  an  Activity Described in the ActDesc colunm.
-Each  Other column presents the mean (Average) time of the observations for various Subjects who participated 
-in the study.
+Activity Mean   
+File Name :  ActMean.txt
+
+
+Has 86  Observations of  30 Subjects  doing  6 Activities
+Each row represents  an  Subjects Activity Described in the ActDesc column.
+Each  value  the mean (Average) time of the observations recorded for that subject for each activity.
+
+Header row ..
+Subject	ActDesc	tBodyAcc-mean()-X	tBodyAcc-mean()-Y	tBodyAcc-mean()-Z  ......
 
 
