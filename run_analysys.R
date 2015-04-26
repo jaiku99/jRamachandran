@@ -104,19 +104,16 @@ download.file( FUrl, destfile= "./data/Dataset.zip" )
 
   #  Summarizing and grouping data as needed   #/
 
-     DSubject_mean  <- dcast(DNarrow, Subject ~ variable, mean)
-
-     DActivity_mean  <- dcast(DNarrow, ActDesc ~ variable, mean)
-
+  
+DActivity_mean  <- dcast(DNarrow, Subject + ActDesc ~ variable, mean)
 
 setwd("../..")
 
-write.table(DNarrow,  file= "NarrowData.txt",  col.names =TRUE )
 
-write.table(DSubject_mean,  file= "SubMean.txt",  col.names =TRUE )
 
 write.table(DActivity_mean,  file= "ActMean.txt",  col.names =TRUE )
 
+View(DActivity_mean)
 
 #Clean up #/
 
